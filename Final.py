@@ -71,7 +71,7 @@ def predict(image, model, device):
 DEVICE = "cpu"
 model = FaceModel()
 model.to(DEVICE)
-model.load_state_dict(torch.load(r"D:\Minor\final\best-weights.pt", map_location=DEVICE))
+model.load_state_dict(torch.load("best-weights.pt", map_location=DEVICE))
 
 # Main Streamlit code
 st.markdown("""
